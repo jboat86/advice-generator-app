@@ -1,0 +1,109 @@
+// project style guide
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap");
+
+// primary colours
+
+$light-Cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+
+// Neutral Colours
+
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+// projects begins here
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: $dark-blue;
+  display: flex;
+  color: $light-Cyan;
+  text-align: center;
+  flex-direction: column;
+  height: calc(200vh-0.1px);
+  align-items: center;
+  justify-self: center;
+  padding: 1.5rem;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card-container {
+  background: $dark-grayish-blue;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem 2.5rem;
+}
+
+// advice heading styling
+
+.card-container h1 {
+  color: $neon-green;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.4rem;
+  font-size: 0.825rem;
+}
+
+// advice text styling
+p {
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+.card-container p {
+  margin-bottom: 2rem;
+  color: $light-Cyan;
+}
+
+.card-container picture img {
+  margin-bottom: 1.25rem;
+}
+
+// button styling
+.card-container button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $neon-green;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 2rem;
+  transition: background 0.5s ease-in-out;
+}
+
+.card-container button:hover {
+  box-shadow: 5px 5px 40px $neon-green;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5rem;
+  transition: color 1s ease;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: hsl(0, 54%, 62%);
+}
+
+@media screen and (min-width: 700px) {
+  .card-container {
+    max-width: 70%;
+  }
+}
